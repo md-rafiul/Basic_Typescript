@@ -1,5 +1,8 @@
 # Basic_Typescript
 
+
+## Solution file is in the 'src' folder.
+
 1. What is the use of the keyof keyword in TypeScript? Provide an example.
 
 Ans: The keyof keyword returns the keys of an object. It is used to create a union of the keys of a type or interface.
