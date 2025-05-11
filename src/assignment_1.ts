@@ -7,7 +7,6 @@ function formatString(input: string, toUpper?: boolean): string {
 }
 
 console.log(formatString("heLLo", false)); 
-console.log(formatString("heLLo", false)); 
 
 type Book = { title: string; rating: number };
 function filterByRating(items: Book[]): Book[] {
@@ -109,16 +108,16 @@ function getDayType(day: Day): string {
 console.log(getDayType(Day.Monday)); // Output: "Weekday"
 console.log(getDayType(Day.Saturday)); // Output: "Weekend"
 
-async function squareAsync(n: number): Promise<number>{
-    return await new Promise<number>((resolve, reject)=>{
-        if(n<0){
-           reject('Error: Negative number not allowed');
-        }else{
+async function squareAsync(n: number): Promise<number> {
+    return await new Promise<number>((resolve, reject) => {
+        if (n < 0) {
+            reject('Error: Negative number not allowed');
+        } else {
             setTimeout(() => {
-                resolve( n * n);
-            }, 1000)
-        }    
-    }) 
+                resolve(n * n);
+            }, 1000);
+        }
+    });
 }
 
 squareAsync(4).then(console.log);        // Output after 1s: 16
